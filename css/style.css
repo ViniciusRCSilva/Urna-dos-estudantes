@@ -1,0 +1,184 @@
+:root{
+    --white: #fff;
+    --grey: #242424;
+    --lightgreen: #D4E1E0;
+    --lightblue: #00B2FF;
+    --lightgrey: #EBEBEB;
+}
+
+*{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+
+.containerGeral{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illustration{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--lightgreen);
+    padding-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.illustration img{
+    width: 200px;
+}
+
+.infoContainer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.registerOptionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.registerOptionContainer p{
+    margin-right: 5px;
+}
+
+.formContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.formContainer p{
+    margin-bottom: 5px;
+}
+
+.formContainer input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.formContainer h2{
+    margin-bottom: 10px;
+}
+
+.formContainer input[type="number"]{
+    height: 30px;
+    border: none;
+    background-color: var(--lightgrey);
+}
+
+.formContainer input[type="password"]{
+    height: 30px;
+    border: none;
+    background-color: var(--lightgrey);
+}
+
+.formContainer input[type="button"]{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 1281px) {
+    .background{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: rgb(123,252,255);
+        background: linear-gradient(214deg, rgba(123,252,255,1) 0%, rgba(115,133,255,1) 50%, rgba(57,54,235,1) 100%);
+    }
+    
+    .containerGeral{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--white);
+        position: relative;
+        left: 25%;
+        border-radius: 20px;
+        box-shadow: 15px 10px 15px var(--grey);
+    }
+
+    .illustration{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 95.6%;
+        border-radius: 20px;
+    }
+
+    .illustration div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 25%;
+    }
+
+    .formContainer{
+        font-size: 16px;
+        height: 100%;
+    }
+
+    /* Firefox */
+    .formContainer input[type="number"]{
+        height: 30px;
+        -moz-appearance: textfield;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    .formContainer input::-webkit-outer-spin-button,
+    .formContainer input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .formContainer input[type="password"]{
+        height: 30px;
+    }
+
+    .formContainer input[type="button"]{
+        width: 50%;
+        height: 40px;
+        font-size: 16px;
+    }
+}
