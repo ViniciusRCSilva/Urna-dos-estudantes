@@ -90,6 +90,12 @@
     margin-bottom: 10px;
 }
 
+.formContainer input[type="text"]{
+    height: 30px;
+    border: none;
+    background-color: var(--lightgrey);
+}
+
 .formContainer input[type="number"]{
     height: 30px;
     border: none;
@@ -121,8 +127,9 @@
         height: 100vh;
         display: flex;
         align-items: center;
-        background: rgb(123,252,255);
-        background: linear-gradient(214deg, rgba(123,252,255,1) 0%, rgba(115,133,255,1) 50%, rgba(57,54,235,1) 100%);
+        justify-content: center;
+        background: rgb(60,66,205);
+        background: linear-gradient(214deg, rgba(60,66,205,1) 0%, rgba(20,37,156,1) 50%, rgba(1,0,88,1) 100%);
     }
     
     .containerGeral{
@@ -132,31 +139,46 @@
         flex-direction: row;
         align-items: center;
         background-color: var(--white);
-        position: relative;
-        left: 25%;
         border-radius: 20px;
-        box-shadow: 15px 10px 15px var(--grey);
     }
 
     .illustration{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        height: 95.6%;
+        justify-content: center;
+        height: 95%;
         border-radius: 20px;
     }
 
     .illustration div{
+        margin-top: 60px;
+    }
+
+    .infoContainer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        left: 25%;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .registerOptionContainer a{
+        color: var(--lightblue);
     }
 
     .formContainer{
         font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: 100%;
+    }
+
+    .formContainer img{
+        width: 60px;
+        margin-top: -20px;
     }
 
     /* Firefox */

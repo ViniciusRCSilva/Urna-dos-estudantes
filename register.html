@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna dos estudantes</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,17 +28,18 @@
                 </div>
                 
                 <div class="formContainer">
+                    <img src="img/userAdd.png" alt="user">
                     <h2>Cadastro</h2>
 
                     <form action="">
                         <div class="formContent">
-                            <p>Código</p>
-                            <input type="number" name="" id="">
+                            <p>Nome</p>
+                            <input type="text" name="" id="">
                             <p>Senha</p>
                             <input type="password" name="" id="">
                         </div>
                         
-                        <input type="button" value="Cadastrar">
+                        <input type="button" value="Cadastrar" onclick="alertarCodigo(1, 20)">
                     </form>
                 </div>
             </div>
