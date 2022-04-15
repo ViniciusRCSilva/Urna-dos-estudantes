@@ -70,6 +70,10 @@
     font-size: 20px;
 }
 
+.formContainer img{
+    width: 60px;
+}
+
 .formContainer form{
     display: flex;
     flex-direction: column;
