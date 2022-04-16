@@ -32,15 +32,23 @@
                     <img src="img/userAdd.png" alt="user">
                     <h2>Cadastro</h2>
 
-                    <form action="">
+                    <form action="" method="">
                         <div class="formContent">
                             <p>Nome</p>
-                            <input type="text" name="" id="" required>
+                            <input type="text" name="fieldName" id="fieldName" required>
+                            
+                            <p>Matricula</p>
+                            <input type="text" name="fieldMatricula" id="fieldMatricula" required>
+                            
                             <p>Senha</p>
-                            <input type="password" name="" id="" required>
+                            <input type="password" name="fieldPasswordRegister" id="fieldPasswordRegister" required>
+                            
+                            <p>Confirmar Senha</p>
+                            <input type="password" name="fieldPasswordRegisterConfirm" id="fieldPasswordRegisterConfirm" required>
                         </div>
-                        
-                        <input type="button" value="Cadastrar" onclick="alertarCodigo(1, 20)">
+
+                        <input type="submit" value="Cadastrar">
+                        <!-- onclick="alertarCodigo(1, 20)" -->
                     </form>
                 </div>
             </div>
